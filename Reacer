@@ -12,6 +12,7 @@ local antiAfkActive = false
 local antiAfkConnection
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local worlds = {
+    {name = "Inicio", id = 298400657},
     {name = "Earth", id = 14694717758},
     {name = "Namek", id = 4761949056},
     {name = "OtherWorld", id = 4263492467}
@@ -155,7 +156,7 @@ local function createGUI()
     MissionsToggleButton.BorderSizePixel = 0
 
     MundosToggleButton.Parent = OuterFrame
-    MundosToggleButton.Text = "Mundos"
+    MundosToggleButton.Text = "Teleports"
     MundosToggleButton.Size = UDim2.new(0, 95, 0, 30)
     MundosToggleButton.Position = UDim2.new(0, 0, 0, 170)
     MundosToggleButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
